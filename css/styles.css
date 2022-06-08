@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "signerica";
+  src: url(/fonts/Signerica_Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #242424;
+  --light: #e8e8e8;
+  --lighterBackground: #343434;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+  cursor: pointer;
+}
+
+body {
+  color: var(--light);
+  font-family: "montserrat", Verdana, Tahoma, sans-serif;
+}
+
+.background {
+  width: 100%;
+  background-color: var(--background);
+  padding-bottom: 70px;
+}
+
+header {
+  width: 100%;
+}
+
+.logo {
+  font-family: "signerica", serif;
+  text-align: center;
+  font-size: 200%;
+  margin: auto;
+  padding-top: 110px;
+  padding-bottom: 40px;
+}
+
+nav {
+  position: relative;
+}
+
+.active {
+  position: absolute;
+  background-color: var(--lighterBackground);
+  height: 50vh;
+  width: 100%;
+  border-radius: 30px;
+  display: none;
+}
+
+nav ul {
+  position: relative;
+  z-index: 10;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  list-style: none;
+  font-weight: 600;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.card_container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 60px;
+  background-color: var(--lighterBackground);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card_container img {
+  display: block;
+  width: 80%;
+  height: 250px;
+  border-radius: 30px;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card_container h2 {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.card_container p {
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+.icon_container {
+  width: 60%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+.fa-github {
+  font-size: 3rem;
+}
+
+.fa-square-up-right {
+  font-size: 2.5rem;
+}
