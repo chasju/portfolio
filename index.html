@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,30 +30,50 @@
         <h1>Projects</h1>
         <div class="card_wrapper">
           <section class="card_container">
-            <a href=""> <img src="/images/allthingsjupiter.png" alt="" /></a>
+            <a href="https://allthingsjupiter.netlify.app">
+              <img src="/images/allthingsjupiter.png" alt=""
+            /></a>
             <h2>Project Exam 1</h2>
-            <p>This is about something, and I will tell you later what it is about. Ok?</p>
+            <p>My interest for the Universe had me creating a blog dedicated to Jupiter.</p>
             <div class="icon_container">
-              <a href=""> <i class="fa-brands fa-github"></i></a>
-              <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-chasju">
+                <i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://allthingsjupiter.netlify.app">
+                <i class="fa-solid fa-square-up-right"></i
+              ></a>
             </div>
           </section>
           <section class="card_container">
-            <a href=""> <img src="/images/square-eyes.png" alt="" /></a>
+            <a href="https://square-eyes-chasju.netlify.app">
+              <img src="/images/square-eyes.png" alt=""
+            /></a>
             <h2>Cross-Course</h2>
-            <p>This is about something, and I’ll tell you later what it’s about. Ok?</p>
+            <p>
+              A project creating an e-commerce website for people interested in independent film.
+            </p>
             <div class="icon_container">
-              <a href=""> <i class="fa-brands fa-github"></i></a>
-              <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
+              <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-chasju">
+                <i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://square-eyes-chasju.netlify.app">
+                <i class="fa-solid fa-square-up-right"></i
+              ></a>
             </div>
           </section>
           <section class="card_container">
-            <a href=""> <img src="/images/semester-project-2021.png" alt="" /></a>
+            <a href="https://semester-project-2021.netlify.app">
+              <img src="/images/semester-project-2021.png" alt=""
+            /></a>
             <h2>Semester Project 2021</h2>
-            <p>This is about something, and I’ll tell you later what it’s about. Ok?</p>
+            <p>An informational website for the Community Science Museum</p>
             <div class="icon_container">
-              <a href=""> <i class="fa-brands fa-github"></i></a>
-              <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
+              <a href="https://github.com/chasju/semester-project-2021">
+                <i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://semester-project-2021.netlify.app">
+                <i class="fa-solid fa-square-up-right"></i
+              ></a>
             </div>
           </section>
         </div>
@@ -63,13 +83,15 @@
         <div class="social_media">
           <ul>
             <li>
-              <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook-f"></i></a>
             </li>
             <li>
-              <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/charlottesjusdal/">
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="fa-solid fa-at"></i></a>
+              <a href="mailto:charlotte.sjusdal@hotmail.com"><i class="fa-solid fa-at"></i></a>
             </li>
           </ul>
         </div>
@@ -93,20 +115,44 @@
             <div class="input_item">
               <label for="">Name</label>
               <input type="text" name="name" class="name" />
+              <p
+                class="error_message error_name"
+                aria-label="Required. Must be 5 characters or longer"
+              >
+                Required. Must be 5 characters or longer.
+              </p>
             </div>
             <div class="input_item">
               <label for="">Email</label>
               <input type="email" name="email" class="email" />
+              <p
+                class="error_message error_email"
+                aria-label="Required. Must be a valid email address"
+              >
+                Required. Must be a valid email address.
+              </p>
             </div>
             <div class="input_item">
               <label for="">Subject</label>
               <input type="text" name="subject" class="subject" />
+              <p
+                class="error_message error_subject"
+                aria-label="Required. Must be 15 characters or longer"
+              >
+                Required. Must be 15 characters or longer.
+              </p>
             </div>
           </div>
           <div class="input_container">
             <div class="input_item">
               <label for="">Message</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <textarea name="textarea" class="textarea" cols="30" rows="10"></textarea>
+              <p
+                class="error_message error_textarea"
+                aria-label="Required. Must be 25 characters or longer"
+              >
+                Required. Must be 25 characters or longer.
+              </p>
             </div>
             <div class="button_container">
               <button>send</button>
@@ -114,7 +160,13 @@
             </div>
           </div>
         </form>
+        <article class="thankyou_message">
+          <h3>Thank you for your message.</h3>
+          <p>I will get back to you shortly</p>
+        </article>
       </div>
     </section>
+    <script src="/js/index.js"></script>
+    <script src="/js/contact.js"></script>
   </body>
 </html>

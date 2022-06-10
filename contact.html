@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1" />
+    <title>Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/3f52b12258.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="background about_page-background">
+      <header>
+        <a href="/index.html"> <div class="logo">Charlotte</div></a>
+        <nav>
+          <div class="active"></div>
+          <ul>
+            <li class="about"><a href="#about">about</a></li>
+            <li class="contact"><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="contact" class="contact_page">
+          <div class="contact_container">
+            <h2>Contact</h2>
+            <form action="">
+              <div class="input_container">
+                <div class="input_item">
+                  <label for="">Name</label>
+                  <input type="text" name="name" class="name" />
+                  <p
+                    class="error_message error_name"
+                    aria-label="Required. Must be 5 characters or longer"
+                  >
+                    Required. Must be 5 characters or longer.
+                  </p>
+                </div>
+                <div class="input_item">
+                  <label for="">Email</label>
+                  <input type="email" name="email" class="email" />
+                  <p
+                    class="error_message error_email"
+                    aria-label="Required. Must be a valid email address"
+                  >
+                    Required. Must be a valid email address.
+                  </p>
+                </div>
+                <div class="input_item">
+                  <label for="">Subject</label>
+                  <input type="text" name="subject" class="subject" />
+                  <p
+                    class="error_message error_subject"
+                    aria-label="Required. Must be 15 characters or longer"
+                  >
+                    Required. Must be 15 characters or longer.
+                  </p>
+                </div>
+              </div>
+              <div class="input_container">
+                <div class="input_item">
+                  <label for="">Message</label>
+                  <textarea name="textarea" class="textarea" cols="30" rows="10"></textarea>
+                  <p
+                    class="error_message error_textarea"
+                    aria-label="Required. Must be 25 characters or longer"
+                  >
+                    Required. Must be 25 characters or longer.
+                  </p>
+                </div>
+                <div class="button_container">
+                  <button>send</button>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+              </div>
+            </form>
+            <article class="thankyou_message">
+              <h3>Thank you for your message.</h3>
+              <p>I will get back to you shortly</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>

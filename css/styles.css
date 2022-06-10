@@ -16,6 +16,10 @@
   --lightGrey: #505050;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: var(--light);
@@ -29,7 +33,9 @@ body {
 
 .tagline,
 .about_background,
-.contact_background {
+.contact_background,
+.thankyou_message,
+.input_item p {
   display: none;
 }
 
@@ -117,6 +123,7 @@ main h1 {
 .card_container p {
   width: 80%;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .icon_container {
@@ -135,6 +142,111 @@ main h1 {
 .fa-square-up-right {
   font-size: 2.5rem;
 }
+
+/* About page */
+
+.about_page-background {
+  height: 100vh;
+}
+
+.about_page {
+  display: block;
+  width: 100%;
+  background-color: var(--lightGrey);
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.about_page-container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.about_page h1 {
+  font-size: 2rem;
+  padding: 40px;
+  text-align: center;
+}
+
+.about_page p {
+  text-align: center;
+}
+
+/*/ About page */
+
+/* Contact page */
+
+.contact_page h2 {
+  text-align: center;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2rem;
+}
+
+.input_item p {
+  font-size: 0.8rem;
+  color: rgb(255, 122, 122);
+}
+
+.contact_container input,
+.contact_container textarea {
+  font-size: 1.1rem;
+  width: 250px;
+  padding: 10px;
+}
+
+.contact_container textarea {
+  height: 150px;
+}
+
+button {
+  all: unset;
+}
+
+.button_container {
+  padding: 30px;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button_container:hover {
+  opacity: 0.5;
+}
+
+.fa-paper-plane {
+  font-size: 1.5rem;
+}
+
+.thankyou_message {
+  width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+/*/ Contact page */
 
 @media screen and (min-width: 1200px) {
   .background {
@@ -289,6 +401,7 @@ main h1 {
     font-size: 3rem;
     padding: 20px 0;
   }
+
   .about_container p {
     width: 70%;
     margin: auto;
@@ -298,56 +411,11 @@ main h1 {
   }
 
   form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+    flex-direction: row;
+    gap: 50px;
   }
 
   .input_container {
-    display: flex;
-    flex-direction: column;
     height: 300px;
-  }
-
-  .input_item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 2rem;
-  }
-
-  .contact_container input,
-  .contact_container textarea {
-    font-size: 1.1rem;
-    width: 250px;
-    padding: 10px;
-  }
-
-  .contact_container textarea {
-    height: 150px;
-  }
-
-  button {
-    all: unset;
-  }
-
-  .button_container {
-    padding: 30px;
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    transition: opacity 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  .button_container:hover {
-    opacity: 0.5;
-  }
-
-  .fa-paper-plane {
-    font-size: 1.5rem;
   }
 }
