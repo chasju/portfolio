@@ -11,10 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/3f52b12258.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/3f52b12258.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -24,50 +21,100 @@
         <nav>
           <div class="active"></div>
           <ul>
-            <li class="about"><a href="">about</a></li>
-            <li class="contact"><a href="">contact</a></li>
+            <li class="about"><a href="#about">about</a></li>
+            <li class="contact"><a href="#contact">contact</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>Projects</h1>
-        <section class="card_container">
-          <img src="/images/allthingsjupiter.png" alt="" />
-          <h2>Project Exam 1</h2>
-          <p>
-            This is about something, and I will tell you later what it is about.
-            Ok?
-          </p>
-          <div class="icon_container">
-            <a href=""> <i class="fa-brands fa-github"></i></a>
-            <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
-          </div>
-        </section>
-        <section class="card_container">
-          <img src="/images/square-eyes.png" alt="" />
-          <h2>Cross-Course</h2>
-          <p>
-            This is about something, and I’ll tell you later what it’s about.
-            Ok?
-          </p>
-          <div class="icon_container">
-            <a href=""> <i class="fa-brands fa-github"></i></a>
-            <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
-          </div>
-        </section>
-        <section class="card_container">
-          <img src="/images/semester-project-2021.png" alt="" />
-          <h2>Semester Project 2021</h2>
-          <p>
-            This is about something, and I’ll tell you later what it’s about.
-            Ok?
-          </p>
-          <div class="icon_container">
-            <a href=""> <i class="fa-brands fa-github"></i></a>
-            <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
-          </div>
-        </section>
+        <div class="card_wrapper">
+          <section class="card_container">
+            <a href=""> <img src="/images/allthingsjupiter.png" alt="" /></a>
+            <h2>Project Exam 1</h2>
+            <p>This is about something, and I will tell you later what it is about. Ok?</p>
+            <div class="icon_container">
+              <a href=""> <i class="fa-brands fa-github"></i></a>
+              <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
+            </div>
+          </section>
+          <section class="card_container">
+            <a href=""> <img src="/images/square-eyes.png" alt="" /></a>
+            <h2>Cross-Course</h2>
+            <p>This is about something, and I’ll tell you later what it’s about. Ok?</p>
+            <div class="icon_container">
+              <a href=""> <i class="fa-brands fa-github"></i></a>
+              <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
+            </div>
+          </section>
+          <section class="card_container">
+            <a href=""> <img src="/images/semester-project-2021.png" alt="" /></a>
+            <h2>Semester Project 2021</h2>
+            <p>This is about something, and I’ll tell you later what it’s about. Ok?</p>
+            <div class="icon_container">
+              <a href=""> <i class="fa-brands fa-github"></i></a>
+              <a href=""> <i class="fa-solid fa-square-up-right"></i></a>
+            </div>
+          </section>
+        </div>
       </main>
+      <div class="tagline">
+        <h2>Front End Developer</h2>
+        <div class="social_media">
+          <ul>
+            <li>
+              <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-at"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <section id="about" class="about_background">
+      <div class="about_container">
+        <h2>About</h2>
+        <p>
+          This is about something, and I’ll tell you later what it’s about. Ok? This is about
+          something, and I’ll tell you later what it’s about. Ok? This is about something, and I’ll
+          tell you later what it’s about. Ok?
+        </p>
+      </div>
+    </section>
+    <section id="contact" class="contact_background">
+      <div class="contact_container">
+        <h2>Contact</h2>
+        <form action="">
+          <div class="input_container">
+            <div class="input_item">
+              <label for="">Name</label>
+              <input type="text" name="name" class="name" />
+            </div>
+            <div class="input_item">
+              <label for="">Email</label>
+              <input type="email" name="email" class="email" />
+            </div>
+            <div class="input_item">
+              <label for="">Subject</label>
+              <input type="text" name="subject" class="subject" />
+            </div>
+          </div>
+          <div class="input_container">
+            <div class="input_item">
+              <label for="">Message</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="button_container">
+              <button>send</button>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

@@ -13,6 +13,7 @@
   --background: #242424;
   --light: #e8e8e8;
   --lighterBackground: #343434;
+  --lightGrey: #505050;
 }
 
 a {
@@ -24,6 +25,12 @@ a {
 body {
   color: var(--light);
   font-family: "montserrat", Verdana, Tahoma, sans-serif;
+}
+
+.tagline,
+.about_background,
+.contact_background {
+  display: none;
 }
 
 .background {
@@ -94,7 +101,7 @@ main h1 {
 
 .card_container img {
   display: block;
-  width: 80%;
+  width: 90%;
   height: 250px;
   border-radius: 30px;
   margin: auto;
@@ -127,4 +134,220 @@ main h1 {
 
 .fa-square-up-right {
   font-size: 2.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .background {
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  .logo {
+    padding-top: unset;
+    padding-bottom: unset;
+  }
+
+  nav ul {
+    margin-bottom: unset;
+    width: unset;
+    padding: unset;
+    gap: 50px;
+  }
+
+  nav li {
+    font-size: 2rem;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  nav li:hover {
+    opacity: 0.5;
+  }
+
+  main {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    padding-bottom: 40px;
+  }
+
+  main h1 {
+    text-align: unset;
+  }
+
+  .card_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .card_container {
+    max-width: 360px;
+    margin: unset;
+  }
+
+  .card_container img {
+    height: 170px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .card_container img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .fa-square-up-right {
+    font-size: 2rem;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .fa-github {
+    font-size: 2.5rem;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .fa-github:hover,
+  .fa-square-up-right:hover {
+    opacity: 0.5;
+  }
+
+  .tagline {
+    position: fixed;
+    bottom: 50px;
+    display: inline-table;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 1400px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .tagline h2 {
+    font-size: 2rem;
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+  }
+
+  .social_media li {
+    list-style-type: none;
+  }
+
+  .social_media ul {
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .fa-facebook-f,
+  .fa-linkedin-in,
+  .fa-at {
+    font-size: 2rem;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .fa-facebook-f:hover,
+  .fa-linkedin-in:hover,
+  .fa-at:hover {
+    opacity: 0.5;
+  }
+
+  .about_background,
+  .contact_background {
+    display: block;
+    width: 100%;
+    background-color: var(--lightGrey);
+  }
+
+  .contact_background {
+    background-color: var(--background);
+  }
+
+  .about_container,
+  .contact_container {
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .about_container h2,
+  .contact_container h2 {
+    font-size: 3rem;
+    padding: 20px 0;
+  }
+  .about_container p {
+    width: 70%;
+    margin: auto;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 20px 0;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .input_container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  .input_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2rem;
+  }
+
+  .contact_container input,
+  .contact_container textarea {
+    font-size: 1.1rem;
+    width: 250px;
+    padding: 10px;
+  }
+
+  .contact_container textarea {
+    height: 150px;
+  }
+
+  button {
+    all: unset;
+  }
+
+  .button_container {
+    padding: 30px;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .button_container:hover {
+    opacity: 0.5;
+  }
+
+  .fa-paper-plane {
+    font-size: 1.5rem;
+  }
 }
