@@ -177,6 +177,11 @@ main h1 {
 
 /* Contact page */
 
+.contact_page-background {
+  height: 100%;
+  min-height: 100vh;
+}
+
 .contact_page h2 {
   text-align: center;
   padding: 40px;
